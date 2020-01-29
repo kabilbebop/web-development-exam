@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 4</title>
+    <script type="module" src="ex4.js"></script>
+    <link rel="shortcut icon" href="#" />
+    <style>
+        main {
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        main > * {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header style="display: flex; font-weight: bold;">
+            <div style="width: 130px">Name</div>
+            <div style="width: 230px">City</div>
+            <div style="width: 130px">Age</div>
+        </header>
+        <user-component name="John Snow" age="25" city="Memphis, Tennessee"></user-component>
+        <user-component name="Jean Neige" age="35" city="Saint-Flour, Cantal"></user-component>
+        <button onclick="buttonClick()">Add year</button>
+    </main>
+
+</body>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Charge notre composant React -->
+<script src="ex5.js"></script>
+
+
+</html>

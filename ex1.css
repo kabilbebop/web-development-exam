@@ -1,0 +1,15 @@
+/* Question 1 */
+.shelf-title {
+    color: blue;
+}
+
+/* Question 2 */
+.btn.btn-primary {
+    color: black;
+}
+
+/* Question 3  */
+nav.d-flex {
+    width: 100%;
+    justify-content: space-evenly;
+}

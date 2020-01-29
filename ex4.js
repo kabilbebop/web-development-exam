@@ -8,7 +8,7 @@ export class UserComponent extends HTMLElement {
     super();
     this.attachShadow({mode: 'open'});
     const txt = `<template>
-        <div style="display: flex">
+        <div style="display: flex; margin-bottom: 20px">
             <div class="name" style="width: 130px"></div>
             <div class="city" style="width: 230px"></div>
             <div class="age"  style="width: 130px"></div>

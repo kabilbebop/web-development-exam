@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Babel files
+ex5.App.js
+ex5.User.js

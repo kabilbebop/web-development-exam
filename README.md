@@ -17,9 +17,9 @@ Le résultat doit ressembler à ex1.png.
 
 Modifier le fichier ex2.js et l'exécuter avec la commande `node ex2.js` pour qu'il affiche 
 
-1. Question 1 : la variable question1 contiendra la liste des propriétés value du tableau data  
+1. La variable question1 contiendra la liste des propriétés value du tableau data  
 
-2. Question 2 : Afficher les variables question2Debut et question2Fin pour qu'il y ait 1 seconde de différence entre les 2 dates.
+2. Afficher les variables question2Debut et question2Fin pour qu'il y ait 1 seconde de différence entre les 2 dates.
 
 Voici un exemple de sortie :
 
@@ -32,13 +32,13 @@ Question 2 :    début à Tue Jan 28 2020 14:51:09 GMT+0100 (GMT+01:00)
 
 Modifier le fichier ex3.html (balise `<script>`) pour répondre aux questions suivantes :
 
-1. Question 1 : recopier le texte de l'article de gauche vers l'article de droite
-2. Question 2 : Modifier le texte de droite pour faire en sorte que le texte passe à la ligne à chaque fin de phrase. Pour cela découper le texte de droite par phrase (caractère '.').
+1. Recopier le texte de l'article de gauche vers l'article de droite
+2. Modifier le texte de droite pour faire en sorte que le texte passe à la ligne à chaque fin de phrase. Pour cela découper le texte de droite par phrase (caractère '.').
 
 
 ## Exercice 4 : Web components 
 
-Exécuter la commande :
+Lancer le serveur http-serve avec la commande :
 
 ```
 npx http-serve .
@@ -46,6 +46,27 @@ npx http-serve .
 
 Ouvrir dans un navigateur http://127.0.0.1:8080/ex4.html
 
+Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Age" et un bouton "Add year".
+
+1. Faire en sorte que user-component affiche bien les informations name, city, age
+2. Quand on clique sur le bouton "Add year", la propriété age de tous les user-components doivent ête incrémentées de 1
+
+
 ## Exercice 5 : ReactJS
+
+Transpilez les fichiers du répertoire ex5 avec la commande : 
+
+```
+npx babel --watch ex5 --out-dir . --presets react-app/prod
+```
+
+Ouvrir dans un navigateur http://127.0.0.1:8080/ex5.html
+(le serveur http-serve doit être lancé)
+
+Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Age" et un bouton "Add year".
+
+1. Faire en sorte que user-component affiche bien les informations name, city, age
+2. Quand on clique sur le bouton "Add year", la propriété age de tous les user-components doivent ête incrémentées de 1
+
 
 

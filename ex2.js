@@ -14,7 +14,6 @@ const data = [{
 
 let question1;
 
-question1 = data.map(e => e.value);
 
 console.log("Question 1 : ", question1);
 
@@ -26,10 +25,7 @@ console.log("Question 1 : ", question1);
 let question2Debut = new Date();
 let question2Fin;
 
-setTimeout(() => {
-    question2Fin = new Date();
-    console.log(`Question 2 :\t${question2Debut}\n\t\t${question2Fin}`);
-}, 1000);
+
 
 
 

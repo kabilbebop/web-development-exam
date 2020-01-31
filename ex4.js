@@ -20,19 +20,6 @@ export class UserComponent extends HTMLElement {
 
   attributeChangedCallback(name, _oldValue, newValue) {
       // Question 1
-      switch(name) {
-          case 'name':
-            this.shadowRoot.querySelector(`.name`).innerText = newValue;
-            break;
-          case 'city':
-            this.shadowRoot.querySelector(`.city`).innerText = newValue;
-            break;
-          case 'age':
-            this.shadowRoot.querySelector(`.age`).innerText = newValue;
-            break;
-          default:
-
-      }
   }
 }
 

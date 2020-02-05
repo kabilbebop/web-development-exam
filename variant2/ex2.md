@@ -1,12 +1,7 @@
-## Exercice 2 : Javascript
+## Exercice 2 : Manipulation du DOM
 
-Modifier le fichier ex2.js et l'exécuter avec la commande `node ex2.js` pour qu'il affiche 
+Modifier le fichier ex2.html (balises `<script>` au début et à la fin du fichier), pour répondre aux questions suivantes :
 
-1. La variable question1 contiendra la liste des propriétés value du tableau data  
+1. Remplacer la ville de la personne n°1 par "New Delhi, India"
+2. Faire en sorte que le clic du bouton "Add year" incrémente l'âge de chaque personne affichée.
 
-2. Faire en sorte d'afficher "Question 2 : <question2Number>" avec question2Number le nombre généré aléatoirement dans le code donné.
-
-Voici un exemple de sortie :
-
-Question 1 :  [ 'first', 'second', 'third' ]
-Question 2 : 11

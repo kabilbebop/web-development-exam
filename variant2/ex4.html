@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Exercice 4</title>
-    <script type="module" src="ex4.js"></script>
     <link rel="shortcut icon" href="#" />
     <style>
         main {
@@ -18,38 +17,19 @@
 
 <body>
 
-
     <main>
-        <header style="display: flex; font-weight: bold; margin-bottom: 20px">
-            <div style="width: 130px">First name</div>
-            <div style="width: 230px">Last name</div>
-            <div style="width: 130px">Birth date</div>
-        </header>
-        <user-component firstname="John" lastname="Snow" birthdate="1995-02-06"></user-component>
-        <user-component firstname="Jean" lastname="Neige" birthdate="1997-06-07"></user-component>
-        <user-component firstname="Matheus Fernandes" lastname="Lima" birthdate="1996-01-07"></user-component>
-        <user-component firstname="Seif" lastname="Koury" birthdate="1996-06-09"></user-component>
-        <user-component firstname="Mebrahtu" lastname="Luwam" birthdate="1995-01-07"></user-component>
-        <footer>Birthdate of the youngest user : <label>1997-06-07</label></footer>
     </main>
 
 </body>
 
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<script src="ex4.App.js"></script>
+<script src="ex4.User.js"></script>
 
 <script type="text/javascript">
-
-    let youngestBirthDate = new Date('1997-06-07');
-    function updateYoungest(birthDate) {
-        if (youngestBirthDate - birthDate < 0) {
-            youngestBirthDate = birthDate;
-            document.querySelector('label').innerText = birthDate.toISOString().substr(0, 10);
-        }
-    }
-
-    // Question 2
-    /// Votre réponse ici ///
-
+    ReactDOM.render(React.createElement(AppComponent), document.querySelector('main'));
 </script>
-
 
 </html>

@@ -1,7 +1,14 @@
-## Exercice 3 : Manipulation du DOM
+## Exercice 3 : Web components 
 
-Modifier le fichier ex3.html (balise `<script>`) pour répondre aux questions suivantes :
+Lancer le serveur http-serve avec la commande :
 
-1. Recopier le texte de l'article de gauche vers l'article de droite
-2. Modifier le texte de droite pour faire en sorte que le texte passe à la ligne à chaque fin de phrase. Pour cela découper le texte de droite par phrase (caractère '.').
+```
+npx http-serve .
+```
 
+Ouvrir dans un navigateur http://127.0.0.1:8080/ex3.html
+
+Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Age" et un bouton "Add year".
+
+1. Faire en sorte que user-component affiche bien les informations name, city, age
+2. Quand on clique sur le bouton "Add year", la propriété age de tous les user-components doivent ête incrémentées de 1

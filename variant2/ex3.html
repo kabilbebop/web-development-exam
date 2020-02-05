@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Exercice 3</title>
+    <script type="module" src="ex3.js"></script>
     <link rel="shortcut icon" href="#" />
     <style>
         main {
@@ -15,36 +16,40 @@
     </style>
 </head>
 
-<script type="text/javascript">
-    // Question 2
-</script>
-
 <body>
+
 
     <main>
         <header style="display: flex; font-weight: bold; margin-bottom: 20px">
-            <div style="width: 130px">Name</div>
-            <div style="width: 230px">City</div>
-            <div style="width: 130px">Age</div>
+            <div style="width: 130px">First name</div>
+            <div style="width: 230px">Last name</div>
+            <div style="width: 130px">Birth date</div>
         </header>
-        <div style="display: flex; margin-bottom: 20px">
-            <div class="name" style="width: 130px">John Snow</div>
-            <div class="city" style="width: 230px">Memphis, Tennessee</div>
-            <div class="age"  style="width: 130px">25</div>
-        </div>
-        <div style="display: flex; margin-bottom: 20px">
-            <div class="name" style="width: 130px">Jean Neige</div>
-            <div class="city" style="width: 230px">Saint-Flour, Cantal</div>
-            <div class="age"  style="width: 130px">35</div>
-        </div>
-        <button>Add year</button>
+        <user-component firstname="John" lastname="Snow" birthdate="1995-02-06"></user-component>
+        <user-component firstname="Jean" lastname="Neige" birthdate="1997-06-07"></user-component>
+        <user-component firstname="Matheus Fernandes" lastname="Lima" birthdate="1996-01-07"></user-component>
+        <user-component firstname="Seif" lastname="Koury" birthdate="1996-06-09"></user-component>
+        <user-component firstname="Mebrahtu" lastname="Luwam" birthdate="1995-01-07"></user-component>
+        <footer>Birthdate of the youngest user : <label>1997-06-07</label></footer>
     </main>
 
 </body>
 
+
 <script type="text/javascript">
-    // Question 1 & 2
+
+    let youngestBirthDate = new Date('1997-06-07');
+    function updateYoungest(birthDate) {
+        if (youngestBirthDate - birthDate < 0) {
+            youngestBirthDate = birthDate;
+            document.querySelector('label').innerText = birthDate.toISOString().substr(0, 10);
+        }
+    }
+
+    // Question 2
     /// Votre réponse ici ///
+
 </script>
+
 
 </html>

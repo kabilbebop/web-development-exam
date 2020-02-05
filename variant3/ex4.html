@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Exercice 4</title>
-    <script type="module" src="ex4.js"></script>
     <link rel="shortcut icon" href="#" />
     <style>
         main {
@@ -19,30 +18,18 @@
 <body>
 
     <main>
-        <header style="display: flex; font-weight: bold; margin-bottom: 20px">
-            <div style="width: 130px">Name</div>
-            <div style="width: 230px">City</div>
-            <div style="width: 130px">Age</div>
-        </header>
-        <section class="users">
-            <user-component name="John Snow" age="25" city="Memphis"></user-component>
-        </section>
     </main>
 
 </body>
 
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<script src="ex4.App.js"></script>
+<script src="ex4.User.js"></script>
+
 <script type="text/javascript">
-
-    const data = [
-        { name: 'Jean Neige', age: '20', city: 'Saint-Flour' },
-        { name: 'Matheus Fernandes', age: '22', city: 'Rio de Janeiro'  },
-        { name: 'Seif Koury', age: '29', city: 'Ouarzazate'  },
-        { name: 'Mebrahtu Luwam', age: '32', city: 'Asmara'  },
-    ];
-
-    // Question 1 & 2
-    /// Votre réponse ici ///
-
+    ReactDOM.render(React.createElement(AppComponent), document.querySelector('main'));
 </script>
 
 </html>

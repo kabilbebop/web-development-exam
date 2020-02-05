@@ -2,8 +2,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Exercice 4</title>
-    <script type="module" src="ex4.js"></script>
+    <title>Exercice 3</title>
+    <script type="module" src="ex3.js"></script>
     <link rel="shortcut icon" href="#" />
     <style>
         main {
@@ -16,6 +16,11 @@
     </style>
 </head>
 
+<script type="text/javascript">
+    // Question 2
+    /// Votre réponse ici ///
+</script>
+
 <body>
 
     <main>
@@ -26,20 +31,9 @@
         </header>
         <user-component name="John Snow" age="25" city="Memphis, Tennessee"></user-component>
         <user-component name="Jean Neige" age="35" city="Saint-Flour, Cantal"></user-component>
-        <button onclick="buttonClick()">Add year</button>
+        <button>Add year</button>
     </main>
 
 </body>
-
-<script type="text/javascript">
-    // Question 2
-    function buttonClick() {
-        console.log('clic!');
-        document.querySelectorAll('user-component').forEach(user => {
-            const age = user.getAttribute('age') * 1;
-            user.setAttribute('age', age + 1);
-        });
-    }
-</script>
 
 </html>

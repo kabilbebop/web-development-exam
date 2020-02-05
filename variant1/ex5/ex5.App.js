@@ -12,12 +12,11 @@ class AppComponent extends React.Component {
   }
 
   render() {
-    // Question 1
     const user0 = this.state.users[0];
-    let user0Component;
-
     const user1 = this.state.users[1];
-    let user1Component;
+
+    // Question 1 : modifier la déclaration de <button>
+    const button = <button>Add year</button>;  /// Votre réponse ici ///
 
     return (
       <section>
@@ -27,22 +26,12 @@ class AppComponent extends React.Component {
             <div style={ {width: '130px'} }>Age</div>
         </header>
         <section className="users">
-          { user0Component }
-          { user1Component }
+          <UserComponent name={user0.name} age={user0.age} city={user0.city} />
+          <UserComponent name={user1.name} age={user1.age} city={user1.city} />
         </section>
-        <button onClick={ () => this.buttonClick() }>Add year</button>
+        { button }
       </section>
     );
-  }
-
-  buttonClick() {
-    // Question 2
-    console.log('clic!');
-    const user0 = this.state.users[0];
-    user0.age++;
-    const user1 = this.state.users[1];
-    user1.age++;
-
   }
 }
 

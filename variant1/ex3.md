@@ -1,7 +1,3 @@
-# Examen de développement Web
-
-Pour cet examen, utiliser une version récente de Chrome ou Firefox et NodeJS.
-
 ## Exercice 3 : Manipulation du DOM
 
 Modifier le fichier ex3.html (balise `<script>`) pour répondre aux questions suivantes :

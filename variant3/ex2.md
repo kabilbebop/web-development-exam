@@ -1,7 +1,3 @@
-# Examen de développement Web
-
-Pour cet examen, utiliser une version récente de Chrome ou Firefox et NodeJS.
-
 ## Exercice 2 : Javascript
 
 Modifier le fichier ex2.js et l'exécuter avec la commande `node ex2.js` pour qu'il affiche 

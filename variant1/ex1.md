@@ -1,7 +1,3 @@
-# Examen de développement Web
-
-Pour cet examen, utiliser une version récente de Chrome ou Firefox et NodeJS.
-
 ## Exercice 1 : HTML / CSS
 
 Ouvrir ex1.html dans un navigateur.

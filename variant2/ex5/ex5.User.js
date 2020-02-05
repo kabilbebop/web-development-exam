@@ -1,12 +1,13 @@
 'use strict';
 
-class User extends React.Component {
+class UserComponent extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     // Question 1
+    /// Votre réponse ici ///
     return (
         <div style={ {display: 'flex'} }>
             <div className="name" style={ {width: '130px'} }></div>

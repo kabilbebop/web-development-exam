@@ -8,8 +8,9 @@ export class UserComponent extends HTMLElement {
     this._onBirthDateChange = fn;
   }
 
-  // Question 1
-  /// Votre réponse ici ///
+  static get observedAttributes() {
+    return ['firstname', 'lastname', 'birthdate'];
+  }
 
   constructor() {
     super();

@@ -8,8 +8,9 @@ npx http-serve .
 
 Ouvrir dans un navigateur http://127.0.0.1:8080/ex3.html
 
-Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Age", avec les informations de "John Doe".
+Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Age", avec les informations de "John Snow".
 
 1. Modifier ex3.html pour faire en sorte qu'un `<user-component>` soit créé pour chaque ligne de la variable data
-2. Chaque élément `<user-component>` devra être inséré à la fin de la section `<section class="users">`
+   Chaque élément `<user-component>` devra être inséré à la fin de la section `<section class="users">`
+2. Utiliser la fonction `data.map` pour réaliser la question 1
 

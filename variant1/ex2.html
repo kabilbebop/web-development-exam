@@ -29,6 +29,9 @@
 <script type="text/javascript">
     // Question 1 & 2
     /// Votre réponse ici ///
+    const textLeft = document.querySelector('.article-left').innerText;
+    const textLeftSplitted = textLeft.replace(/\./g, '.\n\n');
+    document.querySelector('.article-right').innerText = textLeftSplitted;
 </script>
 
 </html>

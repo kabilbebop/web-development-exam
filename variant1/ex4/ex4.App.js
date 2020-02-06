@@ -16,7 +16,13 @@ class AppComponent extends React.Component {
     const user1 = this.state.users[1];
 
     // Question 1 : modifier la déclaration de <button>
-    const button = <button>Add year</button>;  /// Votre réponse ici ///
+    const button = <button onClick={() => {
+      this.setState({
+          users: this.state.users.map(user => { 
+            return {...user, age: user.age + 1 }; 
+          })
+        })
+    }}>Add year</button>;  /// Votre réponse ici ///
 
     return (
       <section>

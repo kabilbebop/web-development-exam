@@ -23,7 +23,7 @@ Ouvrir dans un navigateur http://127.0.0.1:8080/ex4.html
 
 Vous devez voir s'afficher une page avec 3 colonnes "Name, City, Year of birth", un bouton "Add year" et le nom du plus jeune utilisateur de la liste.
 
-1. Modifier ex4/ex4.App.js pour qu'au clic sur le bouton "Add year", la propriété age de tous les UserComponents soit incrémentée de 1
+1. Modifier ex4/ex4.App.js pour que le bouton "Add year" incrémente la colonne Year of birth de la même ligne.
 2. A chaque modification, le nom du plus jeune utilisateur de la liste doit être mis à jour en appelant la méthode `computeYoungest()`
 
 

@@ -1,8 +1,17 @@
 /* Question 1 */
 /* Votre réponse ici */
+.shelf-title {
+    border: 1px solid blue;
+}
 
 /* Question 2 */
 /* Votre réponse ici */
+.mr-3 .Header-link {
+    color: yellow;
+}
 
 /* Question 3  */
 /* Votre réponse ici */
+.btn.btn-primary {
+   float: right;
+}

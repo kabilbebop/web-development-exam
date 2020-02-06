@@ -15,7 +15,7 @@ class AppComponent extends React.Component {
 
   render() {
     // Question 1 : modifier la déclaration de userComponents
-    const userComponents = null;  /// Votre réponse ici ///
+    const userComponents = this.state.users.map(user => (<UserComponent key={user.name} user={user}></UserComponent>));  /// Votre réponse ici ///
 
     return (
       <section>

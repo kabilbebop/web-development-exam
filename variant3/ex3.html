@@ -42,7 +42,12 @@
 
     // Question 1 & 2
     /// Votre réponse ici ///
-
+    const userComponents = data
+        .map(userData => {
+            return `<user-component name="${userData.name}" age="${userData.age}" city="${userData.city}"></user-component>`;
+        })
+        .join('');
+    document.querySelector('.users').innerHTML = userComponents;
 </script>
 
 </html>

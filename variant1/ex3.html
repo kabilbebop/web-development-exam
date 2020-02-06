@@ -16,10 +16,6 @@
     </style>
 </head>
 
-<script type="text/javascript">
-    // Question 2
-    /// Votre réponse ici ///
-</script>
 
 <body>
 
@@ -35,5 +31,17 @@
     </main>
 
 </body>
+
+<script type="text/javascript">
+    // Question 2
+    /// Votre réponse ici ///
+    function increaseAge() {
+        document.querySelectorAll('user-component').forEach(userComponent => {
+            const age = userComponent.getAttribute('age');
+            userComponent.setAttribute('age', parseInt(age, 10) + 1);
+        });
+    }
+    document.querySelector('button').addEventListener('click', increaseAge);
+</script>
 
 </html>

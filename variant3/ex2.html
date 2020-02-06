@@ -44,6 +44,12 @@
 <script type="text/javascript">
     // Question 1 & 2
     /// Votre réponse ici ///
+    document.querySelector('.name').innerText = 'Jack Russel';
+
+    function addUser() {
+        const section = document.querySelector('section').cloneNode(true);
+        document.querySelector('main').appendChild(section);
+    }
 </script>
 
 </html>

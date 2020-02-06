@@ -1,8 +1,18 @@
 /* Question 1 */
 /* Votre réponse ici */
+.shelf-title {
+    color: blue;
+}
 
 /* Question 2 */
 /* Votre réponse ici */
+.btn.btn-primary {
+    color: black;
+}
 
 /* Question 3  */
 /* Votre réponse ici */
+.d-flex {
+    width: 100%;
+    justify-content: space-evenly;
+}

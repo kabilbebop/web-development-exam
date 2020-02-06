@@ -15,15 +15,20 @@ class AppComponent extends React.Component {
   }
 
   render() {
-    // Question 1 & 2 : modifier les déclarations de user0Component, user1Component, user2Component
+    // Question 1 & 2 : votre réponse ci-dessous
+    const updateYear = (index) => {
+      this.state.users[index].year++;
+      this.setState({ users: this.state.users });
+      this.setState({ youngest: this.computeYoungest(this.state.users) });
+    };
     const user0 = this.state.users[0];
-    let user0Component = <UserComponent userData={user0}></UserComponent>; /// Votre réponse ici ///
+    let user0Component = <UserComponent userData={user0} addYear={ () => updateYear(0) }></UserComponent>;
 
     const user1 = this.state.users[1];
-    let user1Component = <UserComponent userData={user1}></UserComponent>; /// Votre réponse ici ///
+    let user1Component = <UserComponent userData={user1} addYear={ () => updateYear(1) }></UserComponent>;
     
     const user2 = this.state.users[2];
-    let user2Component = <UserComponent userData={user2}></UserComponent>; /// Votre réponse ici ///
+    let user2Component = <UserComponent userData={user2} addYear={ () => updateYear(2) }></UserComponent>;
 
     return (
       <section>

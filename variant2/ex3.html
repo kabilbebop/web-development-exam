@@ -38,17 +38,20 @@
 
 <script type="text/javascript">
 
-    let youngestBirthDate = new Date('1997-06-07');
+    // Question 1
+    /// Votre réponse ici ///
+    let youngestBirthDate = null;
+
+    // Détermine si birthDate passée en paramètre est plus récente que youngestBirthDate
     function updateYoungest(birthDate) {
-        if (youngestBirthDate - birthDate < 0) {
+        console.log(birthDate, youngestBirthDate);
+        if (!youngestBirthDate || youngestBirthDate - birthDate < 0) {
             youngestBirthDate = birthDate;
             document.querySelector('label').innerText = birthDate.toISOString().substr(0, 10);
         }
     }
 
-    // Question 2
-    /// Votre réponse ici ///
-
+    document.querySelectorAll('user-component').forEach(userComponent => userComponent.onBirthDateChange = updateYoungest);
 </script>
 
 

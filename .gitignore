@@ -104,5 +104,11 @@ dist
 .tern-port
 
 # Babel files
-/ex3.App.js
-/ex3.User.js
+/ex4.App.js
+/ex4.User.js
+/variant1/ex4.App.js
+/variant1/ex4.User.js
+/variant2/ex4.App.js
+/variant2/ex4.User.js
+/variant3/ex4.App.js
+/variant3/ex4.User.js
